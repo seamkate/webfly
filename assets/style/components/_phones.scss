@@ -1,0 +1,80 @@
+.phones {
+  max-width: 432px;
+  min-width: 320px;
+  @include flex;
+  gap: 12px;
+  position: relative;
+
+  @media (max-width: $mobile) {
+    gap: 8px;
+    padding-top: 48px;
+  }
+}
+
+.phones__button {
+  display: none; 
+
+  @media (max-width: $mobile) {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../img/icons/cross-icon.svg');
+    @include background;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+} 
+.phones__title {
+  @include font ($size: 18px, $weight: 700);
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 12px;
+  @media (max-width: $mobile) {
+    font-size: 16px;
+  }
+}
+
+.phones__adress{
+  @include font ($size: 14px, $weight: 500);
+  color: $color-text-light;
+  margin: 0;
+  max-width: 164px;
+
+  @media (max-width: $mobile) {
+    font-weight: 400;
+  }
+}
+
+.phones__item {
+  background-color: $color-basic-background;
+  border-radius: 12px;
+  padding: 16px;
+  @media (max-width: $mobile) {
+    flex-basis: 100%;
+  }
+
+  a {
+    color: $color-text-dark;
+    display: block;
+    @include font ($size: 16px, $height: 150%, $weight: 500);
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  &--shops{
+    width: 100%;
+    @include flex;
+    gap: 8px;
+
+    phones__title{
+      margin: 0;
+    }
+  }
+}
+

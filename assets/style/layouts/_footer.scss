@@ -1,0 +1,36 @@
+.footer {
+  box-shadow: $shadow-footer;
+  background-color: $color-light;
+}
+
+
+.footer__wrapper {
+  @include flex($align: flex-start);
+  gap: 50px;
+
+  @media (max-width: $mobile) {
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  &--mini{
+    width: 100%;
+    padding: 18px 32px;
+    margin-top: -51px;
+    color: $color-text-light;
+    flex-wrap: nowrap;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}
+
+.footer__nav {
+  @include flex($align: flex-start);
+  gap: 20px;
+  @media (max-width: $desktop-mini) {
+    flex-direction: column;
+    gap: 0;
+  }
+}

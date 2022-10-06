@@ -1,0 +1,150 @@
+.button {
+  border: 0;
+  cursor: pointer;
+  background-color: $color-light;
+  height: 48px;
+  border-radius: 24px;
+  padding: 14px 22px;
+  font-family: 'Manrope' , 'Arial', sans-serif;
+  @include font ($size: 16px, $height: 150%, $weight: 600);
+  @include flex;
+
+  @media (max-width: $tablet) {
+    @include font ($size: 16px, $height: 150%, $weight: 600);
+    height: 36px;
+    padding: 7px 18px;
+  }
+
+  @media (max-width: $mobile){
+    min-width: 36px;
+    padding: 0;
+    
+    span {
+      display: none;
+    }
+  }
+
+  &::before {
+    @include element ($display: inline-block, $width: 24px);
+    @include background();
+    margin-right: 12px;
+
+    @media (max-width: $tablet) {
+      margin-right: 8px;
+    }
+    @media (max-width: $mobile) {
+      margin: 0
+    }
+  }
+
+  &--shopping-cart,
+  &--square {
+    background-color: $color-primary;
+    color: $color-light;
+
+    &:hover{
+      background-color: $color-primary-hover;
+      box-shadow: $shadow-button;
+    }
+  
+    &:active{
+      background-color: $color-primary-active;
+    }
+  
+    &:disabled{
+      background-color: $color-disabled;
+    }
+  }
+
+  &--shopping-cart {
+    &::before {
+      background-image: url('/assets/img/icons/shopping-cart-icon.svg');
+    }
+  }
+
+  &--square {
+    border-radius: 12px;
+  }
+
+
+}
+
+
+
+// .button {
+//   border: 0;
+//   background-color: $color-light;
+//   background-position: left 22px center;
+//   background-repeat: no-repeat;
+//   border-radius: 24px;
+//   height: 48px;
+
+//   cursor: pointer;
+  
+//   padding-left: 54px;
+//   padding-right: 22px;
+
+//   color: $color-text-dark;
+//   font-family: 'Manrope' , 'Arial', sans-serif;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 150%;
+
+
+
+
+//   color: $color-light;
+//   background-color: $color-primary;
+//   border: none;
+//   border-radius: 24px;
+//   padding: 14.5px 16.5px;
+//   @include font ($size: 16px, $height: 150%, $weight: 600);
+
+//   @media (max-width: $tablet) {
+//     @include font ($size: 14px, $height: 150%, $weight: 400);
+//     padding: 7.5px 18px;
+//   }
+
+//   &:hover{
+//     background-color: $color-primary-hover;
+//     box-shadow: $shadow-button;
+//   }
+
+//   &:active{
+//     background-color: $color-primary-active;
+//   }
+
+//   &:disabled{
+//     background-color: $color-disabled;
+//   }
+
+//   &--square {
+//     border-radius: 12px;
+//     padding: 18.5px 23px;
+
+//     @media (max-width: $tablet) {
+//       padding: 12px 24px;
+//     }
+//   }
+
+//   &--shopping-cart{
+//     @include background ($position: left 16.5px center, $size: contain);
+//     background-image: url('/assets/img/icons/shopping-cart-icon.svg');
+//   }
+//   &--add,
+//   &--del {
+//     width: 48px;
+//     height: 48px;
+//     @media (max-width: $tablet) {
+//       width: 36px;
+//       height: 36px;
+//     }
+//   }
+//   &--add{
+//     background-image: url('/assets/img/icons/plus-icon.svg');
+//   }
+//   &--del{
+//     background-image: url('/assets/img/icons/minus-icon.svg');
+//     background-color: $color-primary-background;
+//   }
+// }

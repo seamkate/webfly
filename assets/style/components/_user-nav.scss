@@ -1,0 +1,106 @@
+.user-nav {
+  @include flex;
+  flex-basis: 50%;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  padding: 0;
+  @media (max-width: $desktop-mini) {
+  flex-basis: 33%;
+  }
+  @media (max-width: $tablet) {
+    width: auto;
+  }
+}
+
+.user-nav__button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+
+  @media (max-width: $desktop-mini) {
+    span {
+      display: none;
+    }
+  }
+  @media (max-width: $mobile) {
+    height: 20px;
+  }
+  
+  &:not(:last-child) {
+    margin-right: 23px;
+    @media (max-width: $tablet) {
+      margin-right: 10px;
+    }
+    @media (max-width: $mobile) {
+      margin-right: 13px;
+    }
+  }
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+
+    @media (max-width: $tablet) {
+      width: 20px;
+      height: 20px;
+      margin-right: 0;
+    }
+    @media (max-width: $mobile) {
+    }
+  }
+
+  &--phone::before {
+    background-image: url('/assets/img/icons/phone-icon.svg');
+    @media (max-width: $tablet) {
+      background-image: url('/assets/img/icons/phone-dark-icon.svg');
+    }
+  }
+
+  &--favourite::before {
+    background-image: url('/assets/img/icons/bookmart-icon-big.png');
+    @media (max-width: $tablet) {
+      background-image: url('/assets/img/icons/bookmart-dark-icon.svg');
+    }
+  }
+
+  &--profile::before {
+    background-image: url('/assets/img/icons/user-icon.svg');
+  }
+
+  @media (max-width: $tablet) {
+    span {
+      display: none;
+    }
+  }
+  &--profile {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &--shopping-cart {
+    min-width: 20px;
+    background-color: $color-primary;
+    @media (max-width: $tablet) {
+      background-color: transparent;
+    }
+    &::before {
+      @media (max-width: $desktop-mini) {
+        margin-right: 0;
+      }
+      @media (max-width: $tablet) {
+        background-image: url('/assets/img/icons/shopping-cart-dark-icon.svg');
+      }
+    }
+    &:active,
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}

@@ -4,268 +4,675 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/style/css/main.css">
+  <link rel="stylesheet" href="assets/style/css/main.css">
   <title>Доставка еды</title>
 </head>
 <body>
   <header class="header">
-    <div class="wrapper">
-      <div class="main-nav ">
-        <button type="nav__button">Главное меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <form class="form form--search" action="#" method="get">
-              <input type="search" name="" id="" placeholder="Найти">
-              <button type="submit">Найти</button>
-            </form>
-          </li>
-          <li class="main-nav__item">
-            Меню и каталоги
-            <ul class="main-nav__sublist sublist" >
-              <li class="sublist__item">Доставка еды</li>
-              <li class="sublist__item">Торты на заказ</li>
-              <li class="sublist__item">Специальное меню</li>
-            </ul>
-          </li>
-          <li class="main-nav__item">
-            Покупателю
-            <ul class="main-nav__sublist sublist" >
-              <li class="sublist__item">Как заказать кулинарию</li>
-              <li class="sublist__item">Как заказать торт</li>
-              <li class="sublist__item">Оплата и доставка</li>
-              <li class="sublist__item">Бонусная программа</li>
-              <li class="sublist__item">Акции</li>
-            </ul>
-          </li>
-          <ul class="main-nav__sublist sublist" >
-            <li class="sublist__item">О нас</li>
-            <li class="sublist__item">Отзывы</li>
-            <li class="sublist__item"><a href="">Новости</a></li>
-            <li class="sublist__item"><a href="#">Вакансии</a></li>
-            <li class="sublist__item"><a href="#">Сотрудничество</a></li>
-            <li class="sublist__item"><a href="#">Сертификаты</a></li>
+    <div class="wrapper header__wrapper">
+      <button type="button" class="header__nav-button header__nav-button--open" id="main-nav-button" aria-label="Главное меню"></button>
+      <ul class="main-nav visually-hidden clear-list popup">
+        <li class="main-nav__item main-nav__item--border">
+          <input class="main-nav__search" type="search" name="" id="" placeholder="Поиск">
+        </li>
+        <li class="nav__item main-nav__item main-nav__item--border">
+          <p class="nav__item-title main-nav__item-title">Меню и каталоги</p>
+          <ul class="clear-list nav__sublist main-nav__sublist" >
+            <li><a href="#" class="main-nav__link">Доставка еды</a></li>
+            <li><a href="#" class="main-nav__link">Торты на заказ</a></li>
+            <li><a href="#" class="main-nav__link">Специальное меню</a></li>
+            <li><a href="#" class="main-nav__link">Корпоративные обеды</a></li>
           </ul>
-          <li class="main-nav__item">
-            <a href="#">График работы</a>
-          </li>
-        </ul>
-
-      </div>
-      <div class="user-location">
-        <select class="user-location__list">
-          <option class="user-location__item user-location__item--add">Добавить новый адрес</option>
-          <option class="user-location__item">Никитинская 42</option>
-          <option class="user-location__item">пл. Ленина 12а, д. 42</option>
-        </select>
-        
-      </div>
-    </div>
-    <div class="user-nav">
-      <ul class="user-nav__list">
-        <li class="user-nav__item user-nav__item--phone">Позвонить</li>
-        <li class="user-nav__item user-nav__item--favourite">Избранное</li>
-        <li class="user-nav__item user-nav__item--profile">Профиль</li>
-        <li class="user-nav__item user-nav__item--shopping-cart">Корзина</li>
+        </li>
+        <li class="nav__item main-nav__item main-nav__item--profile">
+          <input type="checkbox" name="" checked/>
+          <p class="nav__item-title main-nav__item-title">Профиль</p>
+          <ul class="clear-list nav__sublist main-nav__sublist" >
+            <li><a href="#" class="main-nav__link">Мои данные</a></li>
+            <li><a href="#" class="main-nav__link">Мои заказы</a></li>
+            <li><a href="#" class="main-nav__link">Мои адреса</a></li>
+            <li><a href="#" class="main-nav__link main-nav__link--color">Выйти</a></li>
+          </ul>
+        </li>
+        <li class="nav__item main-nav__item">
+          <input type="checkbox" name="" checked/>
+          <p class="nav__item-title main-nav__item-title">Покупателю</p>
+          <ul class="clear-list nav__sublist main-nav__sublist" >
+            <li><a href="#" class="main-nav__link">Как заказать кулинарию</a></li>
+            <li><a href="#" class="main-nav__link">Как заказать торт</a></li>
+            <li><a href="#" class="main-nav__link">Оплата и доставка</a></li>
+            <li><a href="#" class="main-nav__link">Бонусная программа</a></li>
+            <li><a href="#" class="main-nav__link">Акции</a></li>
+          </ul>
+        </li>
+        <li class="nav__item main-nav__item">
+          <input type="checkbox" checked>
+          <p class="nav__item-title main-nav__item-title">Компания</p>
+          <ul class="clear-list nav__sublist main-nav__sublist" >
+            <li><a href="#" class="main-nav__link">О нас</a></li>
+            <li><a href="#" class="main-nav__link">Отзывы</a></li>
+            <li><a href="#" class="main-nav__link">Новости</a></li>
+            <li><a href="#" class="main-nav__link">Вакансии</a></li>
+            <li><a href="#" class="main-nav__link">Сотрудничество</a></li>
+            <li><a href="#" class="main-nav__link">Сертификаты</a></li>
+          </ul>
+        </li>
+        <li class="main-nav__item">
+          <p class="main-nav__item-title"><a href="#" class="main-nav__item-title">График работы</a></p>
+        </li>
       </ul>
-    </div>
-    <div class="phones">
-      <div class="phones__list">
-        <p class="phones_title">Служба доставки</p>
-        <ul>
-          <li><a href="tel:+79999999999">+7 (999) 999-99-99</a></li>
-        </ul>
+      <!-- <div class="main-nav">
+
+      </div> -->
+      <div class=" header__logo logo"><a href="#" aria-label="На главную страницу"></a></div>
+      <div class="user-location">
+        <input type="checkbox" checked id="location-checkbox">
+        <div class="user-location__input">
+          <p>Укажите адрес доставки</p>
+        </div>
+        <div class="user-location__list popup">
+          <p class="user-location__item user-location__item--add">Добавить новый адрес</p>
+          <div class="user-location__item">
+            <input class="visually-hidden" type="radio" name="location" id="location_1" checked>
+            <label class="user-location__item" for="location_1">Никитинская 42</label>
+          </div>
+          <div class="user-location__item">
+            <input class="visually-hidden" type="radio" name="location" id="location_2">
+          <label class="user-location__item" for="location_2">пл. Ленина 12а, д. 42</label>
+          </div>
+        </div>
       </div>
-      <div class="phones__list">
-        <p class="phones_title">Торты на заказ</p>
-        <ul>
-          <li><a href="tel:+79999999999">+7 (999) 999-99-99</a></li>
-        </ul>
-      </div>
-      <div class="phones__list">
-        <p class="phones_title">Магазины</p>
-        <ul>
-          <li> Московская 1
-            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-          </li>
-          <li> Московская 1
-            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-          </li>
-          <li> Московская 1
-            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-          </li>
-          <li> Московская 1
-            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-          </li>
-          <li> Московская 1
-            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-          </li>
-          <li> Московская 1
-            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-          </li>
-          <li> Московская 1
-            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-          </li>
-          <li> Московская 1
-            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-          </li>
-          <li> Московская 1
-            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-          </li>
-        </ul>
+      <div class="user-nav">
+        <button class="user-nav__button user-nav__button--phone" id="phones_button" type="button"><span>Позвонить</span></button>
+        <button class="user-nav__button user-nav__button--favourite" type="button"><span>Избранное</span></button>
+        <button class="user-nav__button user-nav__button--profile" type="button"><span>Профиль</span></button>
+        <button class=" button button--shopping-cart user-nav__button user-nav__button--shopping-cart" type="button"><span>Корзина</span></button>
       </div>
     </div>
-    <section class="lacation">
-      <h2> Укажите адрес доставки</h2>
-      <form action="#" method="get">
-        <fieldset>
-          <input type="text" name="location" id="location">
-          <button class="button" type="button">Поиск</button>
-        </fieldset>
-        <button class="button" type="submit">Подтвердить</button>
-        <iframe class="lacation__map" src="" frameborder="0"></iframe>
-      </form>
-    </section>
+    <div class="phones visually-hidden popup popup--phones">
+      <button class="phones__button" aria-label="Закрыть"></button>
+      <div class="phones__item">
+        <p class="phones__title">Служба доставки</p>
+        <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+      </div>
+      <div class="phones__item">
+        <p class="phones__title">Торты на заказ</p>
+        <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+      </div>
+      <div class="phones__item phones__item--shops">
+        <p class="phones__title">Магазины</p>
+        <p class="phones__adress"> Московская 1
+          <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+        </p>
+        <p class="phones__adress"> Московская 1
+          <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+        </p>
+        <p class="phones__adress"> Московская 1
+          <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+        </p>
+        <p class="phones__adress"> Московская 1
+          <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+        </p>
+        <p class="phones__adress"> Московская 1
+          <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+        </p>
+        <p class="phones__adress"> Московская 1
+          <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+        </p>
+        <p class="phones__adress"> Московская 1
+          <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+        </p>
+        <p class="phones__adress"> Московская 1
+          <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+        </p>
+        <p class="phones__adress"> Московская 1
+          <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+        </p>
+      </div>
+    </div>
   </header>
 
   <main class="wrapper">
-    <h1> Доставка блюд от ресторана</h1>
-    <div class="сategory-nav">
-      <li class="сategory-nav__item сategory-nav__item--curren">Доставка еды</li>
-      <li class="сategory-nav__item">Торты на заказ</li>
-      <li class="сategory-nav__item">Специальное меню</li>
-    </div>
+    <h1 class="visually-hidden"> Доставка блюд от ресторана</h1>
+    <ul class="сategory-nav clear-list">
+      <li class="сategory-nav__item сategory-nav__item--current"><a href="#">Доставка&nbsp;еды</a></li>
+      <li class="сategory-nav__item"><a href="#">Торты&nbsp;на&nbsp;заказ</a></li>
+      <li class="сategory-nav__item"><a href="#">Специальное&nbsp;меню</a></li>
+    </ul>
+    <!-- <div class="wpapper wrapper--category">
+    </div> -->
     <section class="banners">
-      <div class="banner">
+      <div class="banner banner--1">
         <p class="banner__title">Пасхальные куличи от 320 руб.</p>
-        <p class="banner__text">ТТекст для дополнительной информации о товаре или акции</p>
-        <button type="banner__button">Попробовать</button>
+        <p class="banner__text ">Текст для дополнительной информации о товаре или акции</p>
+        <button class="banner__button" type="button">Попробовать</button>
       </div>
-      <div class="banner">
+      <div class="banner banner--2">
         <p class="banner__title">Новые морсы и компоты</p>
         <p class="banner__text">Текст для дополнительной информации о товаре или акции. Можно и без него.</p>
-        <button type="banner__button">Узнать больше</button>
+        <button class="banner__button" type="button">Узнать больше</button>
       </div>
-      <div class="banner">
+      <div class="banner banner--3">
         <p class="banner__title">Брускетта с вялеными томатами и курицей</p>
         <p class="banner__text">Новинка в банкетном меню!</p>
-        <button type="banner__button">Узнать больше</button>
+        <button class="banner__button" type="button">Узнать больше</button>
       </div>
-      <div class="banner">
+      <div class="banner banner--4">
         <p class="banner__title">Хотете сладкого?</p>
         <p class="banner__text">Текст для дополнительной информации о товаре или акции. Можно и без него.</p>
-        <button type="banner__button">Узнать больше</button>
+        <button class="banner__button" type="button">Попробовать</button>
       </div>
-      <div class="banner">
+      <div class="banner banner--5">
         <p class="banner__title">Постное меню</p>
         <p class="banner__text">Текст для дополнительной информации о товаре или акции. Можно и без него.</p>
-        <button type="banner__button">Узнать больше</button>
+        <button class="banner__button" type="button">Попробовать</button>
       </div>
-      <div class="banner">
+      <div class="banner banner--6">
         <p class="banner__title">График работы на праздниках</p>
         <p class="banner__text">Текст для дополнительной информации о товаре или акции. Можно и без него.</p>
-        <button type="banner__button">Узнать больше</button>
+        <button class="banner__button" type="button">Попробовать</button>
       </div>
     </section>
     <section class="grocery">
-      <h2>Каталог кулинарии</h2>
-      <ul class="grocery-nav">
-        <li class="grocery-nav__item">
+      <h2 class="grocery__title">Каталог кулинарии</h2>
+      <ul class="grocery__list clear-list">
+        <li class="grocery__label grocery__label--popular">
           <a href="#popular">Популярное</a>
         </li>
-        <li class="grocery-nav__item">
-          <a href="">Холодные закуски</a>
+        <li class="grocery__label grocery__label--snacks">
+          <a href="#snacks">Холодные закуски</a>
         </li>
-        <li class="grocery-nav__item">
-          <a href="">Салаты</a>
+        <li class="grocery__label grocery__label--salads">
+          <a href="#salads">Салаты</a>
         </li>
-        <li class="grocery-nav__item">
-          <a href="">Первые блюда</a>
+        <li class="grocery__label grocery__label--first">
+          <a href="#first">Первые блюда</a>
         </li>
-        <li class="grocery-nav__item">
-          <a href="">Гарниры</a>
+        <li class="grocery__label grocery__label--garnish">
+          <a href="#garnish">Гарниры</a>
         </li>
-        <li class="grocery-nav__item">
-          <a href="">Вторые блюда</a>
+        <li class="grocery__label grocery__label--second">
+          <a href="#second">Вторые блюда</a>
         </li>
-        <li class="grocery-nav__item">Еще</li>
+        <li class="grocery__label grocery__label--else">Еще</li>
       </ul>
-      <section class="grocery" id="popular">
-        <h3>Популярное</h3>
-        <div>
+      <section id="popular" class="wrapper wrapper--grocery">
+        <h3 class="grocery__section-title">Популярное</h3>
+        <div class="grocery__wrapper">
           <section class="card">
-            <img src="#" alt="#">
-            <button type="button" class="bookmart"></button>
-            <p class="tag tag--season"> Сезонное</p>
-            <p class="card__title">Кускус с вялеными томатами</p>
-            <p class="card__text">Кускус, вяленые томаты, чеснок, петрушка, соль, специи, растительное масло.</p>
-            <div class="card__property">
-              <p class="card__price">135</p>
-              <p class="card__weight">200 г</p>
-              <button> В корзину</button>
+            <div class="card__image">
+              <img src="/assets/img/food/1.png" alt="">
+              <button type="button"
+              <button type="button" class="card__bookmart"></button>
+              <p class="card__label card__label--season"> Сезонное</p>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Кускус с вялеными томатами</p>
+              <p class="card__text">Кускус, вяленые томаты, чеснок, петрушка, соль, специи, растительное масло.</p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">135</span>
+                  <span class="card__weight">200г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
             </div>
 
           </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/2.png" alt="">
+              <button type="button" class="card__bookmart"></button>
+              <p class="card__label card__label--season"> Сезонное</p>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Капуста жаренная с грибами</p>
+              <p class="card__text">Капуста белокочанная, шампиньоны, кинза, чеснок, соль, специи, растительное масло. </p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">140</span>
+                  <span class="card__weight">200г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
 
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/3.png" alt="">
+              <button type="button"
+              <button type="button" class="card__bookmart"></button>
+              <p class="card__label card__label--discount"> -20%</p>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Печеные овощи с соусом песто</p>
+              <p class="card__text">Кабачок, баклажан, помидор, лук репчатый, чеснок, растительное масло, соус песто </p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">250</span>
+                  <span class="card__weight">200г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
 
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/4.png" alt="">
+              <button type="button" class="card__bookmart"></button>
+              <p class="card__label card__label--discount"> -35%</p>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Шампиньоны маринованные</p>
+              <p class="card__text">Шампиньоны ,лук репчатый, душистое масло, зелень, чеснок</p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">238</span>
+                  <span class="card__weight">238г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/8.png" alt="">
+              <button type="button" class="card__bookmart"></button>
+              <p class="card__label card__label--season"> Сезонное</p>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Капуста жаренная с грибами</p>
+              <p class="card__text">Капуста белокочанная, шампиньоны, кинза, чеснок, соль, специи, растительное масло. </p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">140</span>
+                  <span class="card__weight">200г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+            
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/7.png" alt="">
+              <button type="button" class="card__bookmart"></button>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Печеные овощи с соусом песто</p>
+              <p class="card__text">Кабачок, баклажан, помидор, лук репчатый, чеснок, растительное масло, соус песто </p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">250</span>
+                  <span class="card__weight">200г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+            
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/6.png" alt="">
+              <button type="button" class="card__bookmart"></button>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Шампиньоны маринованные</p>
+              <p class="card__text">Шампиньоны ,лук репчатый, душистое масло, зелень, чеснок</p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">238</span>
+                  <span class="card__weight">238г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+            
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/5.png" alt="">
+              <button type="button"
+              <button type="button" class="card__bookmart"></button>
+              <p class="card__label card__label--new">Новинка</p>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Кускус с вялеными томатами</p>
+              <p class="card__text">Кускус, вяленые томаты, чеснок, петрушка, соль, специи, растительное масло.</p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">135</span>
+                  <span class="card__weight">200г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+    
+          </section>
+          
+        </div>
+      </section>
+      <section id="snacks" class="wrapper wrapper--grocery">
+        <h3 class="grocery__section-title">Холодные закуски</h3>
+        <div class="grocery__wrapper">
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/1.png" alt="">
+              <button type="button"
+              <button type="button" class="card__bookmart"></button>
+              <p class="card__label card__label--season"> Сезонное</p>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Кускус с вялеными томатами</p>
+              <p class="card__text">Кускус, вяленые томаты, чеснок, петрушка, соль, специи, растительное масло.</p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">135</span>
+                  <span class="card__weight">200г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/2.png" alt="">
+              <button type="button" class="card__bookmart"></button>
+              <p class="card__label card__label--season"> Сезонное</p>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Капуста жаренная с грибами</p>
+              <p class="card__text">Капуста белокочанная, шампиньоны, кинза, чеснок, соль, специи, растительное масло. </p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">140</span>
+                  <span class="card__weight">200г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/3.png" alt="">
+              <button type="button"
+              <button type="button" class="card__bookmart"></button>
+              <p class="card__label card__label--discount"> -20%</p>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Печеные овощи с соусом песто</p>
+              <p class="card__text">Кабачок, баклажан, помидор, лук репчатый, чеснок, растительное масло, соус песто </p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">250</span>
+                  <span class="card__weight">200г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/4.png" alt="">
+              <button type="button" class="card__bookmart"></button>
+              <p class="card__label card__label--discount"> -35%</p>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Шампиньоны маринованные</p>
+              <p class="card__text">Шампиньоны ,лук репчатый, душистое масло, зелень, чеснок</p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">238</span>
+                  <span class="card__weight">238г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/8.png" alt="">
+              <button type="button" class="card__bookmart"></button>
+              <p class="card__label card__label--season"> Сезонное</p>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Капуста жаренная с грибами</p>
+              <p class="card__text">Капуста белокочанная, шампиньоны, кинза, чеснок, соль, специи, растительное масло. </p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">140</span>
+                  <span class="card__weight">200г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+            
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/7.png" alt="">
+              <button type="button" class="card__bookmart"></button>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Печеные овощи с соусом песто</p>
+              <p class="card__text">Кабачок, баклажан, помидор, лук репчатый, чеснок, растительное масло, соус песто </p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">250</span>
+                  <span class="card__weight">200г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+            
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/6.png" alt="">
+              <button type="button" class="card__bookmart"></button>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Шампиньоны маринованные</p>
+              <p class="card__text">Шампиньоны ,лук репчатый, душистое масло, зелень, чеснок</p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">238</span>
+                  <span class="card__weight">238г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+            
+          </section>
+          <section class="card">
+            <div class="card__image">
+              <img src="/assets/img/food/5.png" alt="">
+              <button type="button"
+              <button type="button" class="card__bookmart"></button>
+              <p class="card__label card__label--new">Новинка</p>
+            </div>
+            <div class="card__description">
+              <p class="card__title">Кускус с вялеными томатами</p>
+              <p class="card__text">Кускус, вяленые томаты, чеснок, петрушка, соль, специи, растительное масло.</p>
+              <div class="card__properties">
+                <span>
+                  <span class="card__price">135</span>
+                  <span class="card__weight">200г</span>
+                </span>
+                <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+              </div>
+            </div>
+    
+          </section>
+          
         </div>
       </section>
 
     </section>
   </main>
-  <footer>
-    <div class="main-nav ">
-      <ul class="main-nav__list">
-        </li>
-        <li class="main-nav__item">
-          Меню и каталоги
-          <ul class="main-nav__sublist sublist" >
-            <li class="sublist__item">Доставка еды</li>
-            <li class="sublist__item">Торты на заказ</li>
-            <li class="sublist__item">Специальное меню</li>
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <ul class="footer__nav footer-nav nav clear-list">
+        <li class="nav__item">
+          <input type="checkbox" checked>
+          <p class="nav__item-title footer-nav__item-title">Меню и каталоги</p>
+          <ul class="clear-list nav__sublist footer-nav__sublist" >
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Доставка еды</a>
+            </li>
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Торты на заказ</a>
+            </li>
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Специальное меню</a>
+            </li>
           </ul>
         </li>
-        <li class="main-nav__item">
-          Покупателю
-          <ul class="main-nav__sublist sublist" >
-            <li class="sublist__item">Как заказать кулинарию</li>
-            <li class="sublist__item">Как заказать торт</li>
-            <li class="sublist__item">Оплата и доставка</li>
-            <li class="sublist__item">Бонусная программа</li>
-            <li class="sublist__item">Акции</li>
+        <li class="nav__item">
+          <input type="checkbox" name="" checked/>
+          <p class="nav__item-title footer-nav__item-title">Покупателю</p>
+          <ul class="clear-list nav__sublist footer-nav__sublist" >
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Как заказать кулинарию</a>
+            </li>
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Как заказать торт</a>
+            </li>
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Оплата и доставка</a>
+            </li>
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Бонусная программа</a>
+            </li>
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Акции</a>
+            </li>
           </ul>
         </li>
-        <li class="main-nav__item">
-          Компания
-          <ul class="main-nav__sublist sublist" >
-            <li class="sublist__item">О нас</li>
-            <li class="sublist__item">Отзывы</li>
-            <li class="sublist__item">Новости</li>
-            <li class="sublist__item">Вакансии</li>
-            <li class="sublist__item">Сотрудничество</li>
-            <li class="sublist__item">Сертификаты</li>
+        <li class="nav__item">
+          <input type="checkbox" checked>
+          <p class="nav__item-title footer-nav__item-title">Компания</p>
+          <ul class="clear-list nav__sublist footer-nav__sublist" >
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">О нас</a>
+            </li>
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Отзывы</a>
+            </li>
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Новости</a>
+            </li>
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Вакансии</a>
+            </li>
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Сотрудничество</a>
+            </li>
+            <li class="footer-nav__subitem">
+              <a href="#" class="footer-nav__link">Сертификаты</a>
+            </li>
           </ul>
-        </li>
-        <li class="main-nav__item">
-          График работы
-          <p>График кулинарий</p>
-          <p><span>Пн - Cб:</span>8:00 - 21:00</p>
-          <p>График доставки</p>
-          <p><span>Вс:</span>11:00 - 21:00</p>
-        </li>
-        <li class="main-nav__item">
-          Контакты
-          <p><a href="tel:+74732610430">+7 473 261-04-30</a></p>
-          <p><a href="mailto:gmail@mail.ru">gmail@mail.ru</a></p>
-          <p><a href="#">Адреса кулинарий</a></p>
         </li>
       </ul>
-
+  
+        <div class="schedule">
+          <p class="schedule__title">График работы</p>
+          <p class="schedule__subtitle">График кулинарий</p>
+          <p class="schedule__text"><span>Пн - Cб: </span>8:00 - 21:00</p>
+          <p class="schedule__subtitle">График доставки</p>
+          <p class="schedule__text"><span>Вс: </span>11:00 - 21:00</p>
+        </div>
+        <div class="contacts">
+          <p class="contacts__title">Контакты</p>
+          <p class="contacts__phone">
+            <a href="tel:+74732610430">+7 473 261-04-30</a></p>
+          <p class="contacts__mail">
+            <a href="mailto:gmail@mail.ru">gmail@mail.ru</a></p>
+          <p class="contacts__adress">
+            <a href="#" class="footer-nav__link">Адреса кулинарий</a></p>
+        </div>
     </div>
-    <div>
+    <div class="wrapper footer__wrapper footer__wrapper--mini">
       <p>© ООО «Мосттрейд». Все права защищены. Политика конфиденциальности</p>
-      <p>Разработано в Вебфлай</p>
+      <p>Разработано&nbsp;в&nbsp;Вебфлай</p>
     </div>
 
   </footer>
+  <div class="overlay visually-hidden"></div>
+  <section class="location visually-hidden popup popup--center">
+    <h2 class="location__title"> Укажите адрес доставки</h2>
+    <button class="popup__close" type="button" aria-label="Закрыть"></button>
+    <form action="#" method="get">
+      <fieldset class="location__fieldset">
+        <input type="text" name="location" id="location" placeholder="Укажите адрес доставки">
+        <button class="location__button button--square" type="button">Поиск</button>
+      </fieldset>
+      <button class="location__button location__button--confirm  button--square" type="submit">Подтвердить</button>
+      <div class="location__map"></div>
+    </form>
+  </section>
+  <section class="product visually-hidden popup popup--center">
+    <button class="popup__close" type="button" aria-label="Закрыть"></button>
+    <div class="card__image">
+      <img src="/assets/img/food/5.png" alt="">
+      <button type="button" class="card__bookmart"></button>
+      <p class="card__label card__label--new">Новинка</p>
+    </div>
+    <div class="card__description">
+      <button class="card__info" type="button" aria-label="Информация"></button>
+      <div class="card__dropdown visually-hidden">
+        <p>Пищевая и энерг. ценность в 100 г. продукта:  белки 17,1 г; жиры 10,6 г; углеводы 14,6 г; 222,2 ккал</p>
+      </div>
+      <p class="card__title">Печеные овощи с соусом
+        песто</p>
+      <p class="card__text">Сельдь слабосоленая , отварные овощи : картофель, морковь, свекла, яйцо куриное, майонез.</p>
+      <div class="card__addendums">
+        <p class="card__subtitle">Добавить к заказу</p>
+        <input class="visually-hidden card__addendum-checkbox" type="checkbox" name="add" id="bread">
+        <label class="card__addendum card__addendum--bread" for="bread">
+          <p class="card__addendum-label">Хлеб балтийский</p>
+          <p class="card__addendum-price">12</p>
+        </label>
+
+        <input class="visually-hidden card__addendum-checkbox" type="checkbox" name="add" id="juice">
+        <label class="card__addendum card__addendum--juice" for="juice">
+          <p class="card__addendum-label">Компот из сухофруктов</p>
+          <p class="card__addendum-price">12</p>
+        </label>
+        
+        <input class="visually-hidden card__addendum-checkbox" type="checkbox" name="add" id="souse">
+        <label class="card__addendum card__addendum--souse" for="souse">
+          <p class="card__addendum-label">Соус Heinz кисло-сладкий</p>
+          <p class="card__addendum-price">12</p>
+        </label>
+        
+      </div>
+      <div class="card__information">
+        <p class="card__information-title">Доп. информация</p>
+        <p class="card__information-text"><span>Срок хранения </span>2 суток</p>
+        <p class="card__information-text"><span>Условия хранения </span> от -2°С  до -5°С</p>
+        <p class="card__information-text"><span>Время доставки: </span> в течении часа или в указанное время</p>
+        <p class="card__information-text"><span>Способы оплаты: </span>Наличные и банковская карта</p>
+        <p class="card__information-text"><span>Пищевая ценность: </span>В 100 г. продукта:  белки 17,1 г; жиры 10,6 г; углеводы 14,6 г; 222,2 ккал</p>
+      </div>
+
+      <div class="card__properties">
+        <span>
+          <span class="card__price">135</span>
+          <span class="card__weight">200г</span>
+        </span>
+        <button class="button button--shopping-cart card__button"> <span>В корзину</span></button>
+      </div>
+    </div>
+
+  </section>
+  <script src="/assets/script.js"></script>
 </body>
 </html>

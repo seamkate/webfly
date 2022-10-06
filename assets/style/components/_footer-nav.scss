@@ -1,0 +1,34 @@
+
+.footer-nav__item-title {
+  @include font ($size: 18px, $height: 120%, $weight: 700);
+  color: $color-text-dark;
+  margin: 0 0 16px;
+  
+  @media (max-width: $desktop-mini) {
+    &::after {
+      @include element ($display: inline-block , $width: 20px);
+      background-image: url('../../img/icons/arrow-ico.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  @media (max-width: $tablet) {
+    font-size: 20px;
+  }
+}
+
+.footer-nav__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-text-light;
+}
+
+.footer-nav__subitem {
+  margin-bottom: 8px;
+}
+
+.footer-nav__sublist {
+  margin-bottom: 24px;
+}

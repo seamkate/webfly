@@ -1,0 +1,10 @@
+.sublist {
+  @include font ($size: 16px, $height: 150%, $weight: 500);
+  color: $color-text-light;
+
+  @media (max-width: $tablet) {
+    @include font ($size: 14px, $height: 150%, $weight: 400);
+  }
+
+  
+}

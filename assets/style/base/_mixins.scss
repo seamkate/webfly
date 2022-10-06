@@ -1,0 +1,27 @@
+@mixin font ($size, $height:120%, $weight:400, $style:normal) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin flex ($display: flex, $direction: row, $wrap: wrap, $content: space-between, $align: center){
+  display: $display;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $content;
+  align-items: $align;
+}
+
+@mixin element ($display: block, $content: "", $width, $height:$width) {
+  display: $display;
+  content: $content;
+  width: $width;
+  height: $height;
+}
+
+@mixin background ($position: center, $repeate: no-repeat, $size: contain) {
+  background-position: $position; 
+  background-repeat: $repeate; 
+  background-size: $size;
+}

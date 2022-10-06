@@ -1,0 +1,29 @@
+.сategory-nav {
+  @include flex ($wrap: nowrap, $content: flex-start);
+  gap: 40px;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    width: 0; 
+  }
+  @media (max-width: $mobile) {
+    gap: 20px;
+  }
+}
+
+.сategory-nav__item {
+  a {
+    @include font ($size: 32px, $weight: 600);
+    color: $color-text-light;
+    word-wrap: break-word;
+
+    @media (max-width: $tablet) {
+      @include font ($size: 24px, $weight: 700);
+    }
+  }
+
+  &--current {
+    a {
+      color: $color-text-dark;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.logo {
+  width: 154px;
+  height: 33px;
+  @include background($size: cover);
+  background-image: url('/assets/img/logo.png');
+}

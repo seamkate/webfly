@@ -1,6 +1,34 @@
 // Base
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/global';
+@import 'base/variables';
+@import 'base/normalize';
 
-@import 'base/_fonts.scss';
-@import 'base/_global.scss';
 
 // Components
+
+@import 'components/button';
+@import 'components/main-nav';
+@import 'components/logo';
+@import 'components/nav';
+@import'components/banner';
+@import 'components/user-nav';
+@import 'components/сategory-nav';
+@import 'components/schedule';
+@import 'components/contacts';
+@import 'components/phones';
+@import 'components/grocery';
+@import 'components/card';
+@import 'components/user-location';
+@import 'components/_footer-nav';
+@import 'components/location';
+
+//Layout
+
+@import 'layouts/wrapper';
+@import 'layouts/header';
+@import 'layouts/banners';
+@import 'layouts/popup';
+@import 'layouts/footer';
+@import 'layouts/product';
