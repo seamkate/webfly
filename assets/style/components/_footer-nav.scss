@@ -7,7 +7,7 @@
   @media (max-width: $desktop-mini) {
     &::after {
       @include element ($display: inline-block , $width: 20px);
-      background-image: url('../../img/icons/arrow-ico.svg');
+      background-image: url('../img/icons/arrow-ico.svg');
       background-position: center;
       background-repeat: no-repeat;
     }

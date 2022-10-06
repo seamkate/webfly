@@ -24,22 +24,22 @@
   @include background ($size: cover);
 
   &--1{
-    background-image: url('/assets/img/banners/Banner1.png');
+    background-image: url('../img/banners/Banner1.png');
   }
   &--2{
-    background-image: url('/assets/img/banners/Banner2.png');
+    background-image: url('../img/banners/Banner2.png');
   }
   &--3{
-    background-image: url('/assets/img/banners/Banner3.png');
+    background-image: url('../img/banners/Banner3.png');
   }
   &--4{
-    background-image: url('/assets/img/banners/Banner4.png');
+    background-image: url('../img/banners/Banner4.png');
   }
   &--5{
-    background-image: url('/assets/img/banners/Banner5.png');
+    background-image: url('../img/banners/Banner5.png');
   }
   &--6{
-    background-image: url('/assets/img/banners/Banner6.png');
+    background-image: url('../img/banners/Banner6.png');
   }
 }
 

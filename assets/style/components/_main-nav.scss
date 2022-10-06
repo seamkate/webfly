@@ -75,7 +75,7 @@
   color: $color-text-dark;
   outline: none;
   -webkit-appearance: none;
-  background: url('../../img/icons/magnifier-icon.svg');
+  background: url('../img/icons/magnifier-icon.svg');
   background-position: center right;
   background-repeat: no-repeat;
 
@@ -89,7 +89,7 @@
     -webkit-appearance: none;
     width: 24px; 
     height: 24px;
-    background: $color-light url('../../img/icons/dark-cross-icon.svg');
+    background: $color-light url('../img/icons/dark-cross-icon.svg');
     margin-right: 2px; 
     cursor: pointer; 
     background-position: center right;

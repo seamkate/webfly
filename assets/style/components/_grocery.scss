@@ -86,34 +86,34 @@
   }
 
   &--popular {
-    background-image: url('/assets/img/icons/labels/grocery-label-popular.png');
+    background-image: url('../img/icons/labels/grocery-label-popular.png');
   }
 
   &--snacks {
-    background-image: url('/assets/img/icons/labels/grocery-label-snacks.png');
+    background-image: url('../img/icons/labels/grocery-label-snacks.png');
   }
 
   &--salads {
-    background-image: url('/assets/img/icons/labels/grocery-label-salads.png');
+    background-image: url('../img/icons/labels/grocery-label-salads.png');
   }
 
   &--first {
-    background-image: url('/assets/img/icons/labels/grocery-label-first.png');
+    background-image: url('../img/icons/labels/grocery-label-first.png');
   }
 
   &--garnish {
-    background-image: url('/assets/img/icons/labels/grocery-label-garnish.png');
+    background-image: url('../img/icons/labels/grocery-label-garnish.png');
   }
   
   &--second {
-    background-image: url('/assets/img/icons/labels/grocery-label-second.png');
+    background-image: url('../img/icons/labels/grocery-label-second.png');
   }
   &--else {
     &::after {
       @include element($display:inline-block, $width: 16px);
       margin-left: 8px;
       @include background;
-      background-image: url('/assets/img/icons/arrow-ico.svg');
+      background-image: url('../img/icons/arrow-ico.svg');
     }
   }
 }
