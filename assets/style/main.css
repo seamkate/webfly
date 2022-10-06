@@ -1,32 +1,32 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Manrope";
-  src: url("/assets/fonts/Manrope-Regular.eot");
-  src: url("/assets/fonts/Manrope-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Manrope-Regular.woff2") format("woff2"), url("/assets/fonts/Manrope-Regular.woff") format("woff"), url("/assets/fonts/Manrope-Regular.ttf") format("truetype");
+  src: url("../fonts/Manrope-Regular.eot");
+  src: url("../fonts/Manrope-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff"), url("../fonts/Manrope-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("/assets/fonts/Manrope-Medium.eot");
-  src: url("/assets/fonts/Manrope-Medium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Manrope-Medium.woff2") format("woff2"), url("/assets/fonts/Manrope-Medium.woff") format("woff"), url("/assets/fonts/Manrope-Medium.ttf") format("truetype");
+  src: url("../fonts/Manrope-Medium.eot");
+  src: url("../fonts/Manrope-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff"), url("../fonts/Manrope-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("/assets/fonts/Manrope-SemiBold.eot");
-  src: url("/assets/fonts/Manrope-SemiBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Manrope-SemiBold.woff2") format("woff2"), url("/assets/fonts/Manrope-SemiBold.woff") format("woff"), url("/assets/fonts/Manrope-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Manrope-SemiBold.eot");
+  src: url("../fonts/Manrope-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Manrope-SemiBold.woff2") format("woff2"), url("../fonts/Manrope-SemiBold.woff") format("woff"), url("../fonts/Manrope-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("/assets/fonts/Manrope-Bold.eot");
-  src: url("/assets/fonts/Manrope-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Manrope-Bold.woff2") format("woff2"), url("/assets/fonts/Manrope-Bold.woff") format("woff"), url("/assets/fonts/Manrope-Bold.ttf") format("truetype");
+  src: url("../fonts/Manrope-Bold.eot");
+  src: url("../fonts/Manrope-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Manrope-Bold.woff2") format("woff2"), url("../fonts/Manrope-Bold.woff") format("woff"), url("../fonts/Manrope-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -452,7 +452,7 @@ template {
   background-color: #D9D9D9;
 }
 .button--shopping-cart::before {
-  background-image: url("/assets/img/icons/shopping-cart-icon.svg");
+  background-image: url("../img/icons/shopping-cart-icon.svg");
 }
 .button--square {
   border-radius: 12px;
@@ -546,7 +546,7 @@ template {
   color: #2E1B0E;
   outline: none;
   -webkit-appearance: none;
-  background: url("../../img/icons/magnifier-icon.svg");
+  background: url("../img/icons/magnifier-icon.svg");
   background-position: center right;
   background-repeat: no-repeat;
 }
@@ -557,7 +557,7 @@ template {
   -webkit-appearance: none;
   width: 24px;
   height: 24px;
-  background: #ffffff url("../../img/icons/dark-cross-icon.svg");
+  background: #ffffff url("../img/icons/dark-cross-icon.svg");
   margin-right: 2px;
   cursor: pointer;
   background-position: center right;
@@ -570,7 +570,7 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/assets/img/logo.png");
+  background-image: url("../img/logo.png");
 }
 
 .nav {
@@ -636,22 +636,22 @@ template {
   }
 }
 .banner--1 {
-  background-image: url("/assets/img/banners/Banner1.png");
+  background-image: url("../img/banners/Banner1.png");
 }
 .banner--2 {
-  background-image: url("/assets/img/banners/Banner2.png");
+  background-image: url("../img/banners/Banner2.png");
 }
 .banner--3 {
-  background-image: url("/assets/img/banners/Banner3.png");
+  background-image: url("../img/banners/Banner3.png");
 }
 .banner--4 {
-  background-image: url("/assets/img/banners/Banner4.png");
+  background-image: url("../img/banners/Banner4.png");
 }
 .banner--5 {
-  background-image: url("/assets/img/banners/Banner5.png");
+  background-image: url("../img/banners/Banner5.png");
 }
 .banner--6 {
-  background-image: url("/assets/img/banners/Banner6.png");
+  background-image: url("../img/banners/Banner6.png");
 }
 
 .banner__title {
@@ -749,23 +749,23 @@ template {
   }
 }
 .user-nav__button--phone::before {
-  background-image: url("/assets/img/icons/phone-icon.svg");
+  background-image: url("../img/icons/phone-icon.svg");
 }
 @media (max-width: 768px) {
   .user-nav__button--phone::before {
-    background-image: url("/assets/img/icons/phone-dark-icon.svg");
+    background-image: url("../img/icons/phone-dark-icon.svg");
   }
 }
 .user-nav__button--favourite::before {
-  background-image: url("/assets/img/icons/bookmart-icon-big.png");
+  background-image: url("../img/icons/bookmart-icon-big.png");
 }
 @media (max-width: 768px) {
   .user-nav__button--favourite::before {
-    background-image: url("/assets/img/icons/bookmart-dark-icon.svg");
+    background-image: url("../img/icons/bookmart-dark-icon.svg");
   }
 }
 .user-nav__button--profile::before {
-  background-image: url("/assets/img/icons/user-icon.svg");
+  background-image: url("../img/icons/user-icon.svg");
 }
 @media (max-width: 768px) {
   .user-nav__button span {
@@ -793,7 +793,7 @@ template {
 }
 @media (max-width: 768px) {
   .user-nav__button--shopping-cart::before {
-    background-image: url("/assets/img/icons/shopping-cart-dark-icon.svg");
+    background-image: url("../img/icons/shopping-cart-dark-icon.svg");
   }
 }
 .user-nav__button--shopping-cart:active, .user-nav__button--shopping-cart:hover {
@@ -972,7 +972,7 @@ template {
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url("../../img/icons/cross-icon.svg");
+    background-image: url("../img/icons/cross-icon.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1167,22 +1167,22 @@ template {
   }
 }
 .grocery__label--popular {
-  background-image: url("/assets/img/icons/labels/grocery-label-popular.png");
+  background-image: url("../img/icons/labels/grocery-label-popular.png");
 }
 .grocery__label--snacks {
-  background-image: url("/assets/img/icons/labels/grocery-label-snacks.png");
+  background-image: url("../img/icons/labels/grocery-label-snacks.png");
 }
 .grocery__label--salads {
-  background-image: url("/assets/img/icons/labels/grocery-label-salads.png");
+  background-image: url("../img/icons/labels/grocery-label-salads.png");
 }
 .grocery__label--first {
-  background-image: url("/assets/img/icons/labels/grocery-label-first.png");
+  background-image: url("../img/icons/labels/grocery-label-first.png");
 }
 .grocery__label--garnish {
-  background-image: url("/assets/img/icons/labels/grocery-label-garnish.png");
+  background-image: url("../img/icons/labels/grocery-label-garnish.png");
 }
 .grocery__label--second {
-  background-image: url("/assets/img/icons/labels/grocery-label-second.png");
+  background-image: url("../img/icons/labels/grocery-label-second.png");
 }
 .grocery__label--else::after {
   display: inline-block;
@@ -1193,7 +1193,7 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("/assets/img/icons/arrow-ico.svg");
+  background-image: url("../img/icons/arrow-ico.svg");
 }
 
 .card {
@@ -1256,7 +1256,7 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("/assets/img/icons/bookmart-icon.svg");
+  background-image: url("../img/icons/bookmart-icon.svg");
   background-color: transparent;
   top: 16px;
   left: 16px;
@@ -1453,13 +1453,13 @@ template {
   background-position: center;
 }
 .card__addendum--bread::before {
-  background-image: url("../../img/addendum/bread.png");
+  background-image: url("../img/addendum/bread.png");
 }
 .card__addendum--juice::before {
-  background-image: url("../../img/addendum/juice.png");
+  background-image: url("../img/addendum/juice.png");
 }
 .card__addendum--souse::before {
-  background-image: url("../../img/addendum/souse.png");
+  background-image: url("../img/addendum/souse.png");
 }
 
 .card__addendum-label {
@@ -1491,7 +1491,7 @@ template {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url("../../img/icons/tick.svg");
+  background-image: url("../img/icons/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 12px;
@@ -1520,7 +1520,7 @@ template {
   content: "";
   width: 16px;
   height: 16px;
-  background-image: url("../../img/icons/arrow-ico.svg");
+  background-image: url("../img/icons/arrow-ico.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 12px;
@@ -1548,7 +1548,7 @@ template {
   position: absolute;
   top: 20px;
   right: 16px;
-  background-image: url("../../img/icons/info-icon.svg");
+  background-image: url("../img/icons/info-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1632,11 +1632,11 @@ template {
   }
 }
 .user-location__input::before {
-  background-image: url(/assets/img/icons/location-icon.svg);
+  background-image: url(../img/icons/location-icon.svg);
   margin-right: 8px;
 }
 .user-location__input::after {
-  background-image: url(/assets/img/icons/arrow-ico.svg);
+  background-image: url(../img/icons/arrow-ico.svg);
 }
 .user-location__input p {
   font-family: "Manrope";
@@ -1680,7 +1680,7 @@ template {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url("../../img/icons/tick.svg");
+  background-image: url("../img/icons/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 12px;
@@ -1695,7 +1695,7 @@ template {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url("../../img/icons/plus-icon.svg");
+  background-image: url("../img/icons/plus-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 12px;
@@ -1715,7 +1715,7 @@ template {
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url("../../img/icons/arrow-ico.svg");
+    background-image: url("../img/icons/arrow-ico.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -1771,7 +1771,7 @@ template {
 .location__map {
   width: 100%;
   height: 405px;
-  background-image: url("../../img/map.png");
+  background-image: url("../img/map.png");
   background-position: center;
   border-radius: 24px;
 }
@@ -1888,10 +1888,10 @@ template {
   }
 }
 .header__nav-button--open {
-  background-image: url("/assets/img/icons/menu-burger-icon.svg");
+  background-image: url("../img/icons/menu-burger-icon.svg");
 }
 .header__nav-button--close {
-  background-image: url("/assets/img/icons/cross-icon.svg");
+  background-image: url("../img/icons/cross-icon.svg");
 }
 
 .banners {
@@ -1959,7 +1959,7 @@ template {
   top: 0;
   border: 0;
   background-color: transparent;
-  background-image: url("../../img/icons/white-cross-icon.svg");
+  background-image: url("../img/icons/white-cross-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -2050,7 +2050,7 @@ template {
     border-radius: 50%;
     border: 1px solid #F5F5F6;
     box-shadow: 2px 2px 10px rgba(151, 151, 151, 0.2);
-    background-image: url("../../img/icons/dark-cross-icon.svg");
+    background-image: url("../img/icons/dark-cross-icon.svg");
     background-color: #ffffff;
     right: 12px;
     top: 12px;

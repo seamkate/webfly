@@ -55,21 +55,21 @@
   }
 
   &--phone::before {
-    background-image: url('/assets/img/icons/phone-icon.svg');
+    background-image: url('../img/icons/phone-icon.svg');
     @media (max-width: $tablet) {
-      background-image: url('/assets/img/icons/phone-dark-icon.svg');
+      background-image: url('../img/icons/phone-dark-icon.svg');
     }
   }
 
   &--favourite::before {
-    background-image: url('/assets/img/icons/bookmart-icon-big.png');
+    background-image: url('../img/icons/bookmart-icon-big.png');
     @media (max-width: $tablet) {
-      background-image: url('/assets/img/icons/bookmart-dark-icon.svg');
+      background-image: url('../img/icons/bookmart-dark-icon.svg');
     }
   }
 
   &--profile::before {
-    background-image: url('/assets/img/icons/user-icon.svg');
+    background-image: url('../img/icons/user-icon.svg');
   }
 
   @media (max-width: $tablet) {
@@ -94,7 +94,7 @@
         margin-right: 0;
       }
       @media (max-width: $tablet) {
-        background-image: url('/assets/img/icons/shopping-cart-dark-icon.svg');
+        background-image: url('../img/icons/shopping-cart-dark-icon.svg');
       }
     }
     &:active,

@@ -47,7 +47,7 @@
   cursor: pointer;
   position: absolute;
   @include background;
-  background-image: url('/assets/img/icons/bookmart-icon.svg');
+  background-image: url('../img/icons/bookmart-icon.svg');
   background-color: transparent;
   top:16px;
   left: 16px;
@@ -210,13 +210,13 @@
     background-position: center;
   }
   &--bread::before {
-    background-image: url('../../img/addendum/bread.png');
+    background-image: url('../img/addendum/bread.png');
   }
   &--juice::before {
-    background-image: url('../../img/addendum/juice.png');
+    background-image: url('../img/addendum/juice.png');
   }
   &--souse::before {
-    background-image: url('../../img/addendum/souse.png');
+    background-image: url('../img/addendum/souse.png');
   }
 
 }
@@ -244,7 +244,7 @@
   border: 2px solid $color-primary;
   &::after {
     @include element ($display: inline-block, $width: 20px);
-    background-image: url('../../img/icons/tick.svg');
+    background-image: url('../img/icons/tick.svg');
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 12px;
@@ -270,7 +270,7 @@
   position: relative;
   &::after {
     @include element ($display: inline-block, $width: 16px);
-    background-image: url('../../img/icons/arrow-ico.svg');
+    background-image: url('../img/icons/arrow-ico.svg');
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 12px;
@@ -299,7 +299,7 @@
   position: absolute;
   top: 20px;
   right: 16px;
-  background-image: url('../../img/icons/info-icon.svg');
+  background-image: url('../img/icons/info-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
 }

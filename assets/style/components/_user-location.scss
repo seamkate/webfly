@@ -59,11 +59,11 @@
   }
 
   &::before{
-    background-image: url(/assets/img/icons/location-icon.svg);
+    background-image: url(../img/icons/location-icon.svg);
     margin-right: 8px;
   }
   &::after{
-    background-image: url(/assets/img/icons/arrow-ico.svg);
+    background-image: url(../img/icons/arrow-ico.svg);
   }
 
   p {
@@ -100,7 +100,7 @@
     color: $color-primary;
     &::after {
       @include element ($display: inline-block, $width: 20px);
-      background-image: url('../../img/icons/tick.svg');
+      background-image: url('../img/icons/tick.svg');
       background-repeat: no-repeat;
       background-position: center;
       margin-left: 12px;
@@ -112,7 +112,7 @@
     cursor: pointer;
     &::after {
       @include element ($display: inline-block, $width: 20px);
-      background-image: url('../../img/icons/plus-icon.svg');
+      background-image: url('../img/icons/plus-icon.svg');
       background-repeat: no-repeat;
       background-position: center;
       margin-left: 12px;
