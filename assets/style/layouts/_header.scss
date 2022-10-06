@@ -1,0 +1,52 @@
+.header {
+  box-shadow: $shadow-header;
+  max-height: 80px;
+  min-height: 40px;
+  position: relative;
+  background-color: $color-light;
+  z-index: 3;
+  margin-bottom: 0;
+  @media (max-width: $mobile) {
+    margin-bottom: 21px;
+  }
+}
+
+.header__wrapper {
+  @include flex($wrap: nowrap);
+  padding: 16px 32px;
+  @media (max-width: $tablet) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: $mobile) {
+    padding: 12px;
+  }
+}
+.header__logo {
+  @media (max-width: $mobile) {
+    width: 93px;
+    height: 20px;
+  }
+}
+
+.header__nav-button {
+  display: block;
+  border: 0;
+  width: 32px;
+  height: 19px;
+  @include background;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (max-width: $mobile) {
+    width: 15px;
+    height: 12px;
+  }
+
+  &--open{
+    background-image: url('/assets/img/icons/menu-burger-icon.svg');
+  }
+
+  &--close{
+    background-image: url('/assets/img/icons/cross-icon.svg');
+  }
+}

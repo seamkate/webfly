@@ -1,0 +1,23 @@
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 26px 32px 32px 32px;
+  position: relative;
+  @media (max-width: $tablet) {
+    padding: 90px 20px 20px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 12px;
+  }
+
+  &--category{
+    width: 100%;
+    padding-bottom: 16px;
+  }
+
+  &--grocery{
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}

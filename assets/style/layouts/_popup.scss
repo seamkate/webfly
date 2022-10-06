@@ -1,0 +1,48 @@
+.popup {
+  background-color: $color-light;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: $shadow-popup;
+  position: absolute;
+  
+  @media (max-width: $mobile) {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  &--phones {
+    top: 92px;
+    left: 50%;
+    right: auto;
+    left: auto;
+    right: 20px;
+
+    @media (max-width: $mobile) {
+      top: 0;
+      padding-top: 48px;
+      left: 0;
+    }
+  }
+
+  &--center {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    top: 92px;
+  }
+}
+
+
+.popup__close{
+  position: absolute;
+  right: -36px;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url('../../img/icons/white-cross-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}

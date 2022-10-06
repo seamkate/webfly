@@ -1,0 +1,36 @@
+.schedule__title {
+  @include font ($size: 18px, $weight: 700);
+  margin-top: 0;
+  @media (max-width: $tablet) {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+.schedule__subtitle {
+  @include font ($size: 16px, $height: 150%, $weight: 700);
+
+  @media (max-width: $tablet) {
+    @include font ($size: 14px, $height: 150%, $weight: 700);
+  }
+}
+
+.schedule__subtitle {
+  margin: 0 0 8px;
+}
+
+.schedule__text {
+  @include font ($size: 16px, $height: 150%, $weight: 500);
+  color: $color-text-light;
+  margin: 0 0 8px;
+  &:last-child {
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: $tablet) {
+    @include font ($size: 14px, $height: 150%, $weight: 400);
+  }
+  span{
+    color: $color-text-dark;
+  }
+
+}
